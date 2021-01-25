@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+$background-col: hsl(185, 75%, 39%);
+$text-grey: hsl(0, 0%, 59%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Kumbh Sans, sans-serif;
+    font-size: 18px;
+    background: url(./images/bg-pattern-bottom.svg) fixed no-repeat 40em 20em,
+    url(./images/bg-pattern-top.svg) fixed no-repeat -40vh -60vh;
+    background-color: $background-col;
+    transition: background 0.5s ease;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 345px;
+    height: auto;
+    background: url(./images/bg-pattern-card.svg) no-repeat top white;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20vh;
+    box-shadow: 0px 29px 50px -30px #000000;
+
+    img {
+        margin-top: 25%;
+        border: 5px solid white;
+        border-radius: 50%;
+    }
+}
+
+.main-text {
+    font-weight: 700;
+}
+
+.grey {
+    font-weight: 400;
+    color: $text-grey;
+}
+
+.pf-content {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid whitesmoke;
+
+    .main-text {
+        padding-right: 5px;
+    }
+
+    .grey {
+        padding-top: 10px
+    }
+}
+
+.pf-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+
+    .grey {
+        font-size: 0.7em
+    }
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-family: Kumbh Sans, sans-serif;
+        font-size: 18px;
+        background: url(./images/bg-pattern-bottom.svg) fixed no-repeat 0em 25em,
+        url(./images/bg-pattern-top.svg) fixed no-repeat -90vh -70vh;
+        background-color: $background-col;
+        transition: background 0.5s ease;
+    }
+}
